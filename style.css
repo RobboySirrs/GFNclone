@@ -1,0 +1,383 @@
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #404040;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #161616;
+  }
+
+  .column {
+    position: relative;
+    display: inline-block;
+    color: black;
+    background: rgb(37, 37, 37);
+    
+    margin: 4px;
+    
+    height: 169px;
+    width: 300px;
+    border-radius: 4px;
+  }
+ 
+  html,
+  body {
+    height: 100%;
+  }
+  .column2 {
+    position: relative;
+    float: left;
+    color: black;
+    padding: 4px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    height: 100px;
+    width: 150px;
+    border-radius: 4px;
+  }
+
+  .img1 {
+    opacity: 0;
+    border-radius: 4px;
+    image-resolution: 3dpi;
+  }
+  img {
+    
+    border-radius: 4px;
+    width: 300px;
+    height: 100%;
+    image-resolution: 3dpi;
+  }
+  .favbild {
+    opacity: 0.7;
+    border-radius: 4px;
+    width: 150px;
+    height: 100%;
+  }
+
+  .fadeIn-test {
+    border-radius: 4px;
+    filter: brightness(80%);
+    width: 300px;
+    height: 100%;
+    animation: fadeIn 3s;
+
+    animation-iteration-count: 1;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      filter: brightness(0%);
+    }
+    70% {
+      filter: brightness(80%);
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      filter: brightness(0%);
+    }
+    70% {
+      filter: brightness(80%);
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      filter: brightness(0%);
+    }
+    70% {
+      filter: brightness(80%);
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      filter: brightness(0%);
+    }
+    70% {
+      filter: brightness(80%);
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      filter: brightness(0%);
+    }
+    70% {
+      filter: brightness(80%);
+    }
+  }
+
+  .column:hover .fadeIn-test {
+    filter: brightness(100%)
+  }
+
+  .column:hover .bottom-left {
+    display: block;
+  }
+  .column:hover .top-left {
+    display: block;
+  }
+
+
+  div.ex2 {
+    max-width: 100%;
+    min-height: 1000px;
+  }
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    width: 100%;
+    display: none;
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 0px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-color: #222222;
+    color: white;
+    border: 2px solid rgb(159, 159, 159);
+    border-radius: 4px;
+    margin: auto;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid #ccc;
+  }
+
+  div {
+    text-align: center;
+  }
+  div .answer {
+    height: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  .answer {
+height: 30px;
+vertical-align: middle;
+}
+div .answer:hover {
+cursor: default;
+}
+.fadeIn-div {
+position: relative;
+width: 100%;
+animation: fadeIn 4s;
+
+animation-iteration-count: 1;
+-webkit-animation: fadeIn 4s;
+-moz-animation: fadeIn 4s;
+-o-animation: fadeIn 4s;
+-ms-animation: fadeIn 4s;
+}
+
+.gomd {
+width: 100%;
+
+opacity: 0;
+}
+.wrapper {
+margin: 0 auto;
+
+background: #ffffff;
+border-radius: 5px;
+position: relative;
+left: 0;
+right: 0;
+
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+
+width: 500px;
+}
+.results {
+box-shadow: 0 -3px 0 #303030;
+position: absolute;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+
+
+
+}
+.footer {
+width: 100%;
+background-color: #161616;
+color: white;
+text-align: center;
+display: inline-block;
+}
+.mini {
+height: 40px;
+width: 40px;
+
+}
+form input:placeholder-shown + button {
+opacity: 0;
+pointer-events: none;
+}
+
+form button {
+position: absolute;
+border: none;
+display: block;
+width: 18px;
+height: 18px;
+line-height: 16px;
+font-size: 12px;
+border-radius: 50%;
+top: 0;
+bottom: 0;
+right: 10px;
+margin: auto;
+background: #ddd;
+padding: 0;
+outline: none;
+cursor: pointer;
+transition: 0.2s;
+}
+div.scrollmenu {
+position: fixunset;
+display: flex;
+column-gap: 5px;
+height: 0px;
+width: 100%;
+overflow-x: auto;
+overflow-y: hidden;
+scroll-snap-type: x mandatory;
+scrollbar-width: none;
+background: #303030;
+opacity: 0%;
+-webkit-transition: 0.5s ease-in-out;
+-moz-transition: 0.5s ease-in-out;
+-o-transition:0.5s ease-in-out;
+transition: 0.5s ease-in-out;
+}
+::-webkit-scrollbar {
+display: none;
+}
+.show.scrollmenu {
+height: 100px;
+opacity: 100%;
+
+-webkit-transition: 0.5s ease-in-out;
+-moz-transition: 0.5s ease-in-out;
+-o-transition: 0.5s ease-in-out;
+transition: 0.5s ease-in-out;
+}
+div.abb {
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;
+border-bottom:solid 1.5px;
+}
+
+.hamburger {
+position: absolute;
+z-index: 100;
+left: 1rem;
+padding: 4px;
+border-width: 1.5px 1px 1px 1px;
+background: #303030;
+cursor: pointer;
+}
+.hamburger:hover {
+background: #969393;
+}
+.button {
+margin-top: 0px;
+border-top: 0px;
+}
+/* TOP LEFT STAR */
+.top-left {
+position: absolute;
+bottom: 0px;
+right: 0px;
+opacity: 0.8;
+width: 30px;
+height: 40px;
+padding: 0px;
+display: none;
+
+
+}
+.star {
+visibility:hidden;
+font-size:25px;
+cursor:pointer;
+color: white;
+margin: 0px 3px;
+
+
+}
+.star:before {
+content: "\2606";
+
+visibility:visible;
+}
+.star:checked:before {
+content: "\2605";
+
+}
